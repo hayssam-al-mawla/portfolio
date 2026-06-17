@@ -15,6 +15,9 @@
   a:hover{text-decoration:underline}
   .wrap{max-width:880px;margin:0 auto;padding:0 22px}
   header{padding:70px 0 40px;border-bottom:1px solid var(--line)}
+  .header-flex{display:flex;gap:30px;align-items:center;flex-wrap:wrap-reverse}
+  .header-text{flex:1 1 320px}
+  .avatar{width:180px;height:180px;border-radius:50%;object-fit:cover;border:3px solid var(--accent);flex-shrink:0;box-shadow:0 8px 28px rgba(0,0,0,.4)}
   .tag{display:inline-block;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
   h1{font-size:42px;line-height:1.1;margin-bottom:10px}
   .role{font-size:19px;color:var(--muted);margin-bottom:18px}
@@ -46,9 +49,14 @@
 <div class="wrap">
 
   <header>
-    <span class="tag">Full-Stack Engineer · Fintech · AI</span>
-    <h1>Hayssam Al Mawla</h1>
-    <div class="role">Building secure end-to-end products for banking &amp; financial platforms — and AI-powered tools on the side</div>
+    <div class="header-flex">
+      <div class="header-text">
+        <span class="tag">Full-Stack Engineer · Fintech · AI</span>
+        <h1>Hayssam Al Mawla</h1>
+        <div class="role">Building secure end-to-end products for banking &amp; financial platforms — and AI-powered tools on the side</div>
+      </div>
+      <img class="avatar" src="profile.jpg" alt="Hayssam Al Mawla" width="180" height="180">
+    </div>
     <p class="lead">
       Senior Full-Stack Developer with 5+ years shipping web, mobile &amp; enterprise products across fintech, SAP,
       and value-added services &mdash; React &amp; Angular (TypeScript) front ends over Java Spring and Node.js
